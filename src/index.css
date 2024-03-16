@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.quote::before {
+  content: "";
+  background-image: url("./assets/images/Quote.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: -0.8em;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
