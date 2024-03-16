@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div id="home">
+    <div id="hero" className="py-28">
       Hero
     </div>
   )
