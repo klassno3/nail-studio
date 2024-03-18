@@ -127,7 +127,7 @@ const BookNow = () => {
               </div>
             ) : null}
             <button
-              className="w-full rounded-sm bg-accentRed-dark hover:bg-accentRed-dark/90 text-white p-2  hover:bg-primary-light"
+              className="w-full rounded-sm bg-accentRed-dark hover:bg-accentRed-dark/90 text-white p-2  hover:bg-primary-light uppercase"
               type="submit"
             >
               Book now
