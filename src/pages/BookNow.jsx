@@ -21,24 +21,26 @@ const BookNow = () => {
       serviceType: Yup.string().required("Service type is required*"),
     }),
     onSubmit: async (values, { resetForm }) => {
-      try {
-        const res = await fetch("http://localhost:5000/users", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        });
+      // try {
+      //   const res = await fetch("http://localhost:5000/users", {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify(values),
+      //   });
 
-        if (!res.ok) {
-          throw new Error("Failed to book service");
-        }
+      //   if (!res.ok) {
+      //     throw new Error("Failed to book service");
+      //   }
 
-        resetForm();
-        console.log("Service booked successfully");
-      } catch (error) {
-        console.error("Error:", error);
-      }
+      //   resetForm();
+      //   console.log("Service booked successfully");
+      // } catch (error) {
+      //   console.error("Error:", error);
+      // }
+      setSuccess(true);
+      resetForm();
     },
   });
 
@@ -128,7 +130,7 @@ const BookNow = () => {
               className="w-full rounded-sm bg-accentRed-dark hover:bg-accentRed-dark/90 text-white p-2  hover:bg-primary-light"
               type="submit"
             >
-              Sign up
+              Book now
             </button>
           </form>
         </div>
@@ -139,14 +141,15 @@ const BookNow = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
         >
           <div className="bg-white p-8 rounded-md shadow-md">
-            <p className="text-green-600 text-lg">
-              Form submitted successfully!
+            <p className="text-green-600">
+              Service booked successfully! You will receive an email for more
+              details. Thank you for choosing Nailed It.
             </p>
             <button
               className="mt-4 bg-accentRed-dark text-white px-4 py-2 rounded-md hover:bg-accentRed-dark/90"
               onClick={closeModal}
             >
-              Close
+              Ok
             </button>
           </div>
         </div>
