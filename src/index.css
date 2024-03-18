@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .quote::before {
   content: "";
   background-image: url("./assets/images/Quote.png");
@@ -16,8 +15,19 @@
   left: 0;
   margin: auto;
 }
-=======
-p{
-  color:#f35555
+
+p {
+  color: #f35555;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
