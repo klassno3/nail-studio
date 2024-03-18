@@ -23,29 +23,29 @@ const Footer = () => {
         <p className="text-white text-sm font-bold">Follow us</p>
         {/* links */}
         <div className="flex gap-2 ">
-          <a href="#">
+          <div>
             <img src={facebook} alt="facebook" />
-          </a>
-          <a href="#">
+          </div>
+          <div>
             <img src={twitter} alt="twitter" />
-          </a>
-          <a href="#">
+          </div>
+          <div>
             <img src={instagram} alt="instagram" />
-          </a>
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-2 items-center md:items-start">
         {/* links */}
         <p className="text-white text-sm font-bold">Help Center</p>
-        <a href="#" className="text-lightGray text-sm ">
+        <div className="text-lightGray text-sm ">
           Contact Us
-        </a>
-        <a href="#" className="text-lightGray text-sm ">
+        </div>
+        <div className="text-lightGray text-sm ">
           Terms and Conditions
-        </a>
-        <a href="#" className="text-lightGray text-sm ">
+        </div>
+        <div className="text-lightGray text-sm ">
           Privacy Policy
-        </a>
+        </div>
       </div>
     </div>
   );
