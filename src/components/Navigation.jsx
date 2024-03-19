@@ -2,7 +2,6 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-scroll";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import Logo from "../assets/images/Logo.svg";
-import Search from "./Search";
 
 
 const Navigation = () => {

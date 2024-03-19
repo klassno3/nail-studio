@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div id="services" className="relative flex flex-wrap gap-6  items-center justify-center">
+    <div
+      id="services"
+      className="relative flex flex-wrap gap-6  items-center justify-center"
+    >
       <div className="flex flex-col gap-4 md:flex-row shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] rounded-lg p-4 w-[20em] items-center md:shadow-none md:w-9/12 md:justify-around 2xl:gap-24 2xl:w-4/5 2xl:justify-center">
         <div className="w-[15em] md:w-[26em]">
           <img
@@ -20,9 +24,12 @@ const Services = () => {
             Select the manicure of your choice and additional services for your
             personal style.
           </p>
-          <button className="uppercase text-accentRed-dark border border-accentRed-dark p-2 w-[9em] rounded-[1.5em] font-light text-sm hover:bg-accentRed-dark hover:text-white transition-colors duration-500 ease-in-out hover:shadow-md">
+          <Link
+            to="/book-now"
+            className="uppercase text-center text-accentRed-dark border border-accentRed-dark p-2 w-[9em] rounded-[1.5em] font-light text-sm hover:bg-accentRed-dark hover:text-white transition-colors duration-500 ease-in-out hover:shadow-md"
+          >
             Book now
-          </button>
+          </Link>
         </div>
       </div>
       <hr className="hidden md:inline-block border border-accentRed-dark w-[46em] rounded-lg" />
@@ -43,9 +50,12 @@ const Services = () => {
             Choose from our five relaxing pedicures and add your choice of add
             ons for tip to toes perfection!
           </p>
-          <button className="uppercase text-accentRed-dark border border-accentRed-dark p-2 w-[9em] rounded-[1.5em] font-light text-sm hover:bg-accentRed-dark hover:text-white transition-colors duration-500 ease-in-out hover:shadow-md">
+          <Link
+            to="/book-now"
+            className="uppercase text-center text-accentRed-dark border border-accentRed-dark p-2 w-[9em] rounded-[1.5em] font-light text-sm hover:bg-accentRed-dark hover:text-white transition-colors duration-500 ease-in-out hover:shadow-md"
+          >
             Book now
-          </button>
+          </Link>
         </div>
       </div>
     </div>
