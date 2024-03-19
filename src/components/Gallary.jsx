@@ -16,7 +16,7 @@ const Gallary = () => {
       <hr className="hidden  md:inline-block border border-accentRed-dark lg:w-[46em] rounded-lg mx-auto self-center relative m-10" />
       <div className="w-full flex justify-center items-center ">
         <div className="font-satisfy text-[60px] text-accentRed-dark md:text-[96px] text-center">
-          <h1>Gallary</h1>
+          <h1>Gallery</h1>
         </div>
       </div>
         <div className="grid grid-cols-4 gap-3 grid-row-5 pt-5">
